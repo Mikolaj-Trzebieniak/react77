@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17243a;
+}
+
+.strona {
+  min-height: 100vh;
+  transition: background-color 0.3s;
+}
+
+.pasek {
+  min-height: 74px;
+  padding: 18px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #10233f;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo-kulka {
+  color: #ff765e;
+  font-size: 25px;
+}
+
+.logo-kolor {
+  color: #ff765e;
+}
+
+.pasek p {
+  margin: 0;
+  color: #d7e1ef;
+  font-size: 14px;
+}
+
+.glowna {
+  width: 84%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.powitanie {
+  padding: 72px 0 58px;
+  text-align: center;
+}
+
+.nadtytul {
+  margin: 0 0 10px;
+  color: #e15e48;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.powitanie h1 {
+  margin: 0;
+  color: #10233f;
+  font-size: clamp(34px, 5vw, 54px);
+}
+
+.opis {
+  max-width: 650px;
+  margin: 18px auto 25px;
+  color: #536176;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.przycisk {
+  padding: 13px 25px;
+  border: 0;
+  border-radius: 7px;
+  background: #e15e48;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.przycisk:hover {
+  background: #c94b37;
+}
+
+.wiadomosc {
+  margin: 18px 0 0;
+  color: #1c6b45;
+  font-weight: bold;
+}
+
+.sekcja {
+  padding: 30px 0 65px;
+}
+
+.naglowek-sekcji {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.naglowek-sekcji h2,
+.ciekawostka h2 {
+  margin: 0;
+  color: #10233f;
+  font-size: 27px;
+}
+
+.liczba {
+  padding: 8px 13px;
+  border-radius: 20px;
+  background: #ffffffb8;
+  color: #536176;
+  font-size: 13px;
+}
+
+.wyszukiwarka {
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 15px 17px;
+  border: 1px solid #d5deea;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  font-size: 15px;
+}
+
+.wyszukiwarka:focus {
+  border-color: #e15e48;
+}
+
+.karty {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.karta {
+  min-height: 190px;
+  padding: 23px;
+  border: 1px solid #e1e7ef;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 18px #10233f0b;
+}
+
+.karta-znak {
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+
+.karta h3 {
+  margin: 0 0 10px;
+  color: #10233f;
+  font-size: 19px;
+}
+
+.karta p {
+  margin: 0;
+  color: #5b687a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.brak {
+  padding: 20px;
+  color: #536176;
+}
+
+.ciekawostka {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 0 65px;
+  padding: 27px;
+  border-radius: 12px;
+  background: #10233f;
+  color: white;
+}
+
+.ikona {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e15e48;
+  color: white;
+  font-size: 24px;
+}
+
+.ciekawostka h2 {
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer {
+  padding: 22px;
+  background: #10233f;
+  color: #d7e1ef;
+  text-align: center;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .pasek {
+    padding: 17px 5%;
+  }
+
+  .pasek p {
+    display: none;
+  }
+
+  .glowna {
+    width: 90%;
+  }
+
+  .powitanie {
+    padding: 55px 0 42px;
+  }
+
+  .karty {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .karty {
+    grid-template-columns: 1fr;
+  }
+
+  .naglowek-sekcji {
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .ciekawostka {
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+
+
+.przyciski-powitania {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.przycisk-trybu {
+  background: #10233f;
+}
+
+.przycisk-trybu:hover {
+  background: #243d60;
+}
+
+.ciemna {
+  background-color: #111827 !important;
+  color: #e5e7eb;
+}
+
+.ciemna .powitanie h1,
+.ciemna .naglowek-sekcji h2 {
+  color: #f8fafc;
+}
+
+.ciemna .opis {
+  color: #cbd5e1;
+}
+
+.ciemna .karta {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: none;
+}
+
+.ciemna .karta h3 {
+  color: #f8fafc;
+}
+
+.ciemna .karta p {
+  color: #cbd5e1;
+}
+
+.ciemna .wyszukiwarka {
+  background: #1f2937;
+  color: #f8fafc;
+  border-color: #4b5563;
+}
+
+.ciemna .wyszukiwarka::placeholder {
+  color: #9ca3af;
+}
+
+.ciemna .liczba {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+
+.ciemna .brak {
+  color: #e5e7eb;
+}
+
+.ciemna .wiadomosc {
+  color: #86efac;
+}
+
+@media (max-width: 520px) {
+  .przyciski-powitania {
+    flex-direction: column;
+  }
+}
